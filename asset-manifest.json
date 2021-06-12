@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/petit-clos-front/static/css/main.4a33cdb4.chunk.css",
-    "main.js": "/petit-clos-front/static/js/main.b7f887d8.chunk.js",
-    "main.js.map": "/petit-clos-front/static/js/main.b7f887d8.chunk.js.map",
+    "main.css": "/petit-clos-front/static/css/main.aafeae61.chunk.css",
+    "main.js": "/petit-clos-front/static/js/main.7b0f6990.chunk.js",
+    "main.js.map": "/petit-clos-front/static/js/main.7b0f6990.chunk.js.map",
     "runtime-main.js": "/petit-clos-front/static/js/runtime-main.2426f06a.js",
     "runtime-main.js.map": "/petit-clos-front/static/js/runtime-main.2426f06a.js.map",
     "static/css/2.39aab190.chunk.css": "/petit-clos-front/static/css/2.39aab190.chunk.css",
@@ -12,7 +12,7 @@
     "static/js/3.d45c7c6d.chunk.js.map": "/petit-clos-front/static/js/3.d45c7c6d.chunk.js.map",
     "index.html": "/petit-clos-front/index.html",
     "static/css/2.39aab190.chunk.css.map": "/petit-clos-front/static/css/2.39aab190.chunk.css.map",
-    "static/css/main.4a33cdb4.chunk.css.map": "/petit-clos-front/static/css/main.4a33cdb4.chunk.css.map",
+    "static/css/main.aafeae61.chunk.css.map": "/petit-clos-front/static/css/main.aafeae61.chunk.css.map",
     "static/js/2.e76a7b22.chunk.js.LICENSE.txt": "/petit-clos-front/static/js/2.e76a7b22.chunk.js.LICENSE.txt",
     "static/media/semantic.min.css": "/petit-clos-front/static/media/outline-icons.ddae9b1b.woff"
   },
@@ -20,7 +20,7 @@
     "static/js/runtime-main.2426f06a.js",
     "static/css/2.39aab190.chunk.css",
     "static/js/2.e76a7b22.chunk.js",
-    "static/css/main.4a33cdb4.chunk.css",
-    "static/js/main.b7f887d8.chunk.js"
+    "static/css/main.aafeae61.chunk.css",
+    "static/js/main.7b0f6990.chunk.js"
   ]
 }

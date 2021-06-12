@@ -35,6 +35,7 @@ const CategoriesSidebar = ({
     if (selectedCategory.slug === "champagnes") {
       setActiveMenu("champagnes bruts");
     }
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [selectedCategory]);
   return (
     <Grid columns={1}>

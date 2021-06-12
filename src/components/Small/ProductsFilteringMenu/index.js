@@ -1,5 +1,6 @@
 import React from "react";
 import { Menu } from "semantic-ui-react";
+import { secondary, ternary } from "../../../_const/_const";
 
 const ProductsFilteringMenu = ({
   subCategories,
@@ -12,12 +13,12 @@ const ProductsFilteringMenu = ({
       borderless
       icon="labeled"
       className="categories-menu"
-      style={{ position: "relative" }}
+      style={{background: secondary}}
     >
       {subCategories.map((subCategory) => (
         <>
           <Menu.Item
-            style={{ position: "relative" }}
+            style={{ color: ternary}}
             key={subCategory.slug}
             className="menu-items"
             active={activeMenu === subCategory.slug}

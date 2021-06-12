@@ -17,7 +17,7 @@ import AdminCrudButtons from "../../components/Small/AdminCrudButtons";
 import ProductItem from "../../components/Small/ProductItem";
 import ProductsFilteringMenu from "../../components/Small/ProductsFilteringMenu";
 import categories from "../../datas/categories";
-import { $SERVER } from "../../_const/_const";
+import { $SERVER, primary, secondary, ternary } from "../../_const/_const";
 import "./categories.css";
 const Categories = ({
   setFilteredProducts,
@@ -143,12 +143,34 @@ const Categories = ({
         as="h2"
         style={
           activeMenu === "rouges"
-            ? { color: "darkred" }
+            ? {
+                color: "darkred",
+                background: primary,
+                border: `1px solid ${secondary}`,
+              }
             : activeMenu === "roses" || activeMenu === "champagnes roses"
-            ? { color: "#fec5d9" }
+            ? {
+                color: "#fec5d9",
+                background: primary,
+                border: `1px solid ${secondary}`,
+              }
             : activeMenu === "blancs" || activeMenu === "champagnes bruts"
-            ? { color: "#f1f285" }
-            : { color: "white" }
+            ? {
+                color: "#f1f285",
+                background: primary,
+                border: `1px solid ${secondary}`,
+              }
+            : activeMenu === "champagnes blanc de blancs"
+            ? {
+                color: "white",
+                background: primary,
+                border: `1px solid ${secondary}`,
+              }
+            : {
+                color: ternary,
+                background: primary,
+                border: `1px solid ${secondary}`,
+              }
         }
       >
         {activeMenu || name}

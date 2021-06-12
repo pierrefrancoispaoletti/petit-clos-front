@@ -9,9 +9,7 @@ import {
   faWineBottle,
 } from "@fortawesome/pro-duotone-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-
-export const primary = ""
-export const secondary = ""
+import { primary, secondary } from "../_const/_const";
 
 const categories = [
   {
@@ -22,8 +20,8 @@ const categories = [
         icon={faWineBottle}
         size="4x"
         style={{
-          "--fa-primary-color": "#AF2127",
-          "--fa-secondary-color": "grey",
+          "--fa-primary-color": primary,
+          "--fa-secondary-color": secondary,
         }}
       />
     ),
@@ -70,7 +68,10 @@ const categories = [
       <FontAwesomeIcon
         size="4x"
         icon={faGlassChampagne}
-        style={{ "--fa-secondary-color": "#f1f285" }}
+        style={{
+          "--fa-primary-color": primary,
+          "--fa-secondary-color": secondary,
+        }}
       />
     ),
     subCategories: [
@@ -117,8 +118,8 @@ const categories = [
         size="4x"
         icon={faBeer}
         style={{
-          "--fa-primary-color": "#AF2127",
-          "--fa-secondary-color": "grey",
+          "--fa-primary-color": primary,
+          "--fa-secondary-color": secondary,
         }}
       />
     ),
@@ -131,8 +132,8 @@ const categories = [
         size="4x"
         icon={faGlassWhiskeyRocks}
         style={{
-          "--fa-primary-color": "#AF2127",
-          "--fa-secondary-color": "grey",
+          "--fa-primary-color": primary,
+          "--fa-secondary-color": secondary,
         }}
       />
     ),
@@ -169,8 +170,8 @@ const categories = [
         size="4x"
         icon={faGlassCitrus}
         style={{
-          "--fa-primary-color": "#AF2127",
-          "--fa-secondary-color": "grey",
+          "--fa-primary-color": primary,
+          "--fa-secondary-color": secondary,
         }}
       />
     ),
@@ -183,8 +184,8 @@ const categories = [
         size="4x"
         icon={faCheeseburger}
         style={{
-          "--fa-primary-color": "#AF2127",
-          "--fa-secondary-color": "grey",
+          "--fa-primary-color": primary,
+          "--fa-secondary-color": secondary,
         }}
       />
     ),

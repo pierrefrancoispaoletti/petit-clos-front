@@ -4,7 +4,7 @@ import { Translator, Translate } from "react-auto-translate";
 import React from "react";
 import { Header } from "semantic-ui-react";
 import "./productitem.css";
-import { GOOGLE_API_KEY } from "../../../_const/_const";
+import { GOOGLE_API_KEY, primary, secondary, ternary } from "../../../_const/_const";
 
 const ProductItem = ({
   product,
@@ -42,7 +42,7 @@ const ProductItem = ({
   return (
     <div
       className="productitem"
-      style={{ display: visible ? "" : user ? "" : "none" }}
+      style={{ display: visible ? "" : user ? "" : "none", background: primary, border: `1px solid ${secondary}` }}
     >
       <div className="productitem-header">
         <Header
@@ -54,14 +54,14 @@ const ProductItem = ({
               ? { color: "#fec5d9" }
               : type === "vins" && category === "blancs"
               ? { color: "#f1f285" }
-              : { color: "" }
+              : { color: ternary }
           }
         >
           {!visible ? "Caché : " : ""}
           {name}
           {image && (
             <FontAwesomeIcon
-              style={{ color: "white", margin: 8 }}
+              style={{ color: ternary, margin: 8 }}
               icon={faSearch}
               onClick={() => {
                 setSelectedProduct(product);
@@ -74,8 +74,8 @@ const ProductItem = ({
                 className="bosschoice alvp__icon"
               icon={faHeartCircle}
               style={{
-                "--fa-primary-color": "darkred",
-                "--fa-secondary-color": "transparent",
+                "--fa-primary-color": primary,
+                "--fa-secondary-color": secondary,
               }}
               size="2x"
             />
@@ -83,12 +83,12 @@ const ProductItem = ({
             ""
           )}
         </Header>
-        <span className="price">
+        <span className="price" style={{background: secondary, color: ternary}}>
           {price.toFixed(2)}
           <small>€</small>
         </span>
       </div>
-      {region && <div className="region">{region}</div>}
+      {region && <div className="region" style={{background: secondary, color: ternary}} >{region}</div>}
       {description && (
         <Translator
           cacheProvider={cacheProvider}
@@ -96,7 +96,7 @@ const ProductItem = ({
           to={userLang.substr(0,2)}
           googleApiKey={GOOGLE_API_KEY}
         >
-          <p className="description">
+          <p className="description" style={{background: secondary, color: ternary}}>
             <Translate>{description}</Translate>
           </p>
         </Translator>

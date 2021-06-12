@@ -10,7 +10,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import axios from "axios";
 import React, { useEffect, useState } from "react";
 import { Button, Container, Header } from "semantic-ui-react";
-import { $SERVER } from "../../_const/_const";
+import { $SERVER, primary, secondary, ternary } from "../../_const/_const";
 import "./home.css";
 
 const Home = ({
@@ -103,7 +103,7 @@ const Home = ({
       )}
       {event && Object.keys(event).length > 0 && (
         <>
-          <Header className="home-header" as="h1">
+          <Header className="home-header" as="h1" style={{background: primary, color: secondary, border:`1px solid ${ternary}`}}>
             {event.name}
           </Header>
           <Container text className="home-presentation">

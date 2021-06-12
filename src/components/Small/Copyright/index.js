@@ -7,6 +7,7 @@ import {
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React from "react";
 import { Divider, Header } from "semantic-ui-react";
+import { ternary } from "../../../_const/_const";
 
 import "./copyright.css";
 const Copyright = ({
@@ -22,7 +23,7 @@ const Copyright = ({
   return (
     <div className="footer">
       <div>
-        <Header as="h3">
+        <Header as="h3" style={{color: ternary}}>
           Retrouvez nous sur :{" "}
         </Header>
       </div>
@@ -50,7 +51,7 @@ const Copyright = ({
       </div>
       <Divider />
       <div>
-        <Header as="h3">
+        <Header as="h3" style={{color: ternary}}>
           Contactez nous !{" "}
         </Header>
       </div>
@@ -82,16 +83,16 @@ const Copyright = ({
         </a>
       </div>
       <Divider />
-      <div className="footer__copyright" style={{ color: "white" }}>
+      <div className="footer__copyright" style={{color: ternary}}>
         {"Copyright © "}
-        <a style={{ color: "white" }} href="https://lepetitclos-ajaccio.fr">
+        <a style={{ color: ternary, textDecoration: "underline" }} href="https://lepetitclos-ajaccio.fr">
           <span>Le Petit Clos &nbsp;</span>
         </a>
         <span>{` ${new Date().getFullYear()}. `}</span>
       </div>
       <div className="footer__alvp">
         <a
-          style={{ color: "white", fontSize: "1em" }}
+          style={{ color: ternary, fontSize: "1em" }}
           href="mailto:pef@alvp-developments.com"
         >
           Made with

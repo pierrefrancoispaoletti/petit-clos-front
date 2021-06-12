@@ -2,4 +2,10 @@
 
 export const $SERVER = "https://petitclos.herokuapp.com";
 
-export const GOOGLE_API_KEY = "AIzaSyAZaWwVgn5z9gNPy0cbweEVGUeWwva5GGM";
+export const GOOGLE_API_KEY = "AIzaSyBlV19qRfHj05YOzkkavxXTS2HGx2D54Ps";
+
+export const primary ="#836A4B"
+
+export const secondary ="#8C430B"
+
+export const ternary = "#FDDD58"

@@ -1,7 +1,7 @@
 {
   "name": "front",
   "version": "0.1.0",
-  "homepage": "https://pierrefrancoispaoletti.github.io/petit-clos-front",
+  "homepage": "https://lepetitclos-ajaccio.fr",
   "private": true,
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.35",

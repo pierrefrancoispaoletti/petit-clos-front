@@ -166,6 +166,12 @@ const Categories = ({
                 background: primary,
                 border: `1px solid ${secondary}`,
               }
+              : activeMenu === "champagnes millésimés"
+            ? {
+                color: "gold",
+                background: primary,
+                border: `1px solid ${secondary}`,
+              }
             : {
                 color: ternary,
                 background: primary,

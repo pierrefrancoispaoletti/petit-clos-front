@@ -146,6 +146,17 @@ const categories = [
           />
         ),
       },
+      {
+        name: "Millésimés",
+        slug: "champagnes millésimés",
+        icon: (
+          <FontAwesomeIcon
+            size="3x"
+            icon={faGlassChampagne}
+            style={{ "--fa-primary-color": "gold" }}
+          />
+        ),
+      },
     ],
   },
   {

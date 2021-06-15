@@ -38,7 +38,7 @@ const categories = [
         ),
       },
       {
-        name: "Épicerie'",
+        name: "Épicerie",
         slug: "epicerie",
         icon: (
           <FontAwesomeIcon

@@ -103,10 +103,10 @@ const Home = ({
       )}
       {event && Object.keys(event).length > 0 && (
         <>
-          <Header className="home-header" as="h1" style={{background: primary, color: secondary, border:`1px solid ${ternary}`}}>
+          <Header className="home-header" as="h1" style={{background: primary, color: ternary, border:`1px solid ${secondary}`}}>
             {event.name}
           </Header>
-          <Container text className="home-presentation">
+          <Container text className="home-presentation" style={{background: primary, color: ternary, border:`1px solid ${secondary}`}}>
             {event.image && (
               <div>
                 <img

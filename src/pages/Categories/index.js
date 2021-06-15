@@ -189,7 +189,7 @@ const Categories = ({
       <Divider hidden />
       <div className="products">
         {filteredProducts
-          ?.sort((a, b) => a.price - b.price)
+          ?.sort((a,b) => b.choice - a.choice).sort((a, b) => a.price - b.price)
           .map((p) => (
             <>
               {user && (

@@ -28,7 +28,7 @@ const Copyright = ({
         </Header>
       </div>
       <div className="footer__icons">
-        <a target="_blank" href="https://www.facebook.com/" rel="noreferrer">
+        <a target="_blank" href="https://www.facebook.com/lepetitclosajaccio" rel="noreferrer">
           <FontAwesomeIcon
             style={{
               color: "#3B5998",
@@ -40,7 +40,7 @@ const Copyright = ({
             pull="left"
           />
         </a>
-        <a target="_blank" href="https://www.instagram.com/" rel="noreferrer">
+        <a target="_blank" href="https://www.instagram.com/lepetitclosajaccio" rel="noreferrer">
           <FontAwesomeIcon
             style={{ color: "#3F729B", borderRadius: "100%" }}
             size="3x"
@@ -56,7 +56,7 @@ const Copyright = ({
         </Header>
       </div>
       <div className="footer__icons">
-        <a href={`mailto:dume.rutili@icloud.com`}>
+        <a href={`mailto:lepetitclosajaccio@gmail.com`}>
           <FontAwesomeIcon
             style={{
               "--fa-primary-color": "black",
@@ -68,7 +68,7 @@ const Copyright = ({
             pull="left"
           />
         </a>
-        <a href={`tel:`}>
+        <a href={`tel:0788423413`}>
           <FontAwesomeIcon
             style={{
               "--fa-primary-color": "firebrick",

@@ -13,6 +13,44 @@ import { primary, secondary } from "../_const/_const";
 
 const categories = [
   {
+    name: "Cuisine",
+    slug: "cuisine",
+    icon: (
+      <FontAwesomeIcon
+        size="4x"
+        icon={faCheeseburger}
+        style={{
+          "--fa-primary-color": primary,
+          "--fa-secondary-color": secondary,
+        }}
+      />
+    ),
+    subCategories: [
+      {
+        name: "Tapas",
+        slug: "tapas",
+        icon: (
+          <FontAwesomeIcon
+            size="3x"
+            icon={faHatChef}
+            style={{ "--fa-secondary-color": "red" }}
+          />
+        ),
+      },
+      {
+        name: "Épicerie'",
+        slug: "epicerie",
+        icon: (
+          <FontAwesomeIcon
+            size="3x"
+            icon={faPepperHot}
+            style={{ "--fa-secondary-color": "red" }}
+          />
+        ),
+      },
+    ],
+  },
+  {
     name: "Vins",
     slug: "vins",
     icon: (
@@ -175,44 +213,6 @@ const categories = [
         }}
       />
     ),
-  },
-  {
-    name: "Cuisine",
-    slug: "cuisine",
-    icon: (
-      <FontAwesomeIcon
-        size="4x"
-        icon={faCheeseburger}
-        style={{
-          "--fa-primary-color": primary,
-          "--fa-secondary-color": secondary,
-        }}
-      />
-    ),
-    subCategories: [
-      {
-        name: "Tapas",
-        slug: "tapas",
-        icon: (
-          <FontAwesomeIcon
-            size="3x"
-            icon={faHatChef}
-            style={{ "--fa-secondary-color": "red" }}
-          />
-        ),
-      },
-      {
-        name: "Épicerie'",
-        slug: "epicerie",
-        icon: (
-          <FontAwesomeIcon
-            size="3x"
-            icon={faPepperHot}
-            style={{ "--fa-secondary-color": "red" }}
-          />
-        ),
-      },
-    ],
   },
 ];
 

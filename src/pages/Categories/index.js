@@ -195,7 +195,15 @@ const Categories = ({
       <Divider hidden />
       <div className="products">
         {filteredProducts
-          ?.sort((a,b) => b.choice - a.choice).sort((a, b) => a.price - b.price)
+          ?.sort((a, b) => a.price - b.price)
+          .sort((a, b) =>
+            a.name.toLowerCase() > b.name.toLowerCase()
+              ? 1
+              : b.name.toLowerCase() > a.name.toLowerCase()
+              ? -1
+              : 0
+          )
+          .sort((a, b) => b.choice - a.choice)
           .map((p) => (
             <>
               {user && (
